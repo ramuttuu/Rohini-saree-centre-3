@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>रोहिणी साडी व सूटिंग शर्टिंग सेंटर — Rohini Saree & Suiting</title>
+  <meta name="description" content="रोहिणी साडी व सूटिंग शर्टिंग सेंटर — प्रीमियम साड़ियाँ, शादी एवं फेस्टिव कलेक्शन। Best price, latest designs. Call/WhatsApp: 8378087999" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-mQ2Yw0F9GJq3v3tq3mQ1Y9Q6lQh8e3+1vQp8q1d+3mV0fJ8f7r9sL6h7yTWSxYF8l1wQeT6o2m6c1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root{
+      --gold:#f6c453;
+      --deep-gold:#d8a51f;
+      --red:#d90429;
+      --dark:#0f0f0f;
+      --card:#111010;
+      --text:#f5f5f5;
+      --muted:#bbbbbb;
+      --accent:#ffef9f;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Poppins', 'Noto Sans Devanagari', system-ui, -apple-system, Arial, sans-serif;background:linear-gradient(180deg,#0a0a0a,#121212 40%,#111 100%);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}/* Header */
+.topbar{position:sticky;top:0;z-index:1000;background:rgba(10,10,10,.7);backdrop-filter:blur(8px);border-bottom:1px solid #222}
+.nav{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+.brand{display:flex;gap:10px;align-items:center}
+.logo{width:40px;height:40px;border-radius:10px;background:radial-gradient(circle at 30% 30%,var(--gold),var(--deep-gold));display:grid;place-items:center;color:#3b1d00;font-weight:900;box-shadow:0 4px 20px rgba(246,196,83,.3)}
+.brand h1{font-size:18px;line-height:1.1;margin:0;font-weight:800;letter-spacing:.3px}
+.brand small{display:block;color:var(--muted);font-weight:500}
+.menu{display:flex;gap:18px;font-weight:600}
+.menu a{padding:8px 12px;border-radius:999px}
+.menu a:hover{background:#1a1a1a}
+.cta{background:linear-gradient(90deg,var(--gold),var(--deep-gold));color:#1e1400;padding:10px 14px;border-radius:999px;font-weight:800;box-shadow:0 6px 18px rgba(246,196,83,.35)}
+
+/* Hero Slider */
+.hero{position:relative;max-width:1200px;margin:18px auto;border-radius:24px;overflow:hidden;background:#000;box-shadow:0 10px 40px rgba(0,0,0,.35);}
+.slides{position:relative;height:62vh;min-height:420px}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
+.slide.active{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.05)}
+.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.65),rgba(0,0,0,.25),rgba(0,0,0,.6))}
+.caption{position:absolute;left:32px;bottom:28px;max-width:640px}
+.tag{display:inline-block;background:linear-gradient(90deg,var(--red),#a80421);padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.5px;margin-bottom:8px}
+.title{font-size:clamp(26px,4.2vw,44px);font-weight:900;margin:4px 0 8px}
+.subtitle{color:#f3f3f3;opacity:.9;margin-bottom:14px}
+.hero-btns{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;font-weight:700;border:1px solid rgba(255,255,255,.15);background:rgba(20,20,20,.5)}
+.btn.gold{background:linear-gradient(90deg,var(--gold),var(--deep-gold));color:#2a1a00;border:none}
+
+/* Offer ticker */
+.ticker{max-width:1200px;margin:16px auto 0;background:#1a1a1a;border:1px solid #262626;border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:10px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold)}
+
+/* Sections */
+section{max-width:1200px;margin:40px auto;padding:0 16px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:18px}
+.sec-title{font-size:clamp(20px,3vw,30px);font-weight:900}
+.sec-note{color:var(--muted)}
+
+/* Gallery */
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.card{grid-column:span 12;background:linear-gradient(180deg,#181818,#0f0f0f);border:1px solid #252525;border-radius:18px;overflow:hidden;transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card img{height:340px;object-fit:cover}
+.card .info{padding:12px 14px;display:flex;align-items:center;justify-content:space-between}
+.price{font-weight:800;color:var(--accent)}
+.badge{background:linear-gradient(90deg,var(--gold),var(--deep-gold));color:#201100;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:800}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+.panel{background:#121212;border:1px solid #262626;border-radius:18px;padding:16px}
+.list{display:grid;gap:10px;margin:10px 0}
+.row{display:flex;gap:10px;align-items:center}
+.row i{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:#1e1e1e}
+.map{border:none;width:100%;height:280px;border-radius:12px}
+
+/* Footer */
+footer{max-width:1200px;margin:26px auto 50px;background:#0f0f0f;border:1px solid #202020;border-radius:16px;padding:16px}
+.foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.foot .brandline{display:flex;gap:10px;align-items:center}
+
+/* Responsive */
+@media(min-width:640px){
+  .card{grid-column:span 6}
+}
+@media(min-width:960px){
+  .card{grid-column:span 4}
+}
+@media(max-width:820px){
+  .contact{grid-template-columns:1fr}
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <div class="topbar">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">र</div>
+        <div>
+          <h1>रोहिणी साडी व सूटिंग शर्टिंग सेंटर</h1>
+          <small>Rohini Saree & Suiting — Degloor</small>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="https://wa.me/918378087999" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>  <!-- Offer ticker -->  <div class="ticker">
+    <span class="dot"></span>
+    <div><strong>Festive Offer:</strong> New Arrivals पर विशेष Discount • Bulk/Bridal Orders Welcome • Cash & UPI Accepted</div>
+  </div>  <!-- Hero Slider -->  <header id="home" class="hero">
+    <div class="slides">
+      <!-- Put your images in /photos with these names -->
+      <div class="slide active"><img src="photos/saree1.jpg" alt="Bridal Saree" /></div>
+      <div class="slide"><img src="photos/saree2.jpg" alt="Silk Saree" /></div>
+      <div class="slide"><img src="photos/saree3.jpg" alt="Designer Saree" /></div>
+      <div class="slide"><img src="photos/saree4.jpg" alt="Traditional Saree" /></div>
+      <div class="shade"></div>
+      <div class="caption">
+        <span class="tag">Premium Collection</span>
+        <div class="title">शादी • फेस्टिव • ट्रेंडी साड़ी कलेक्शन</div>
+        <div class="subtitle">हर बजट और हर मौके के लिए बेहतरीन साड़ियाँ। नए स्टॉक रोज़ाना।</div>
+        <div class="hero-btns">
+          <a class="btn gold" href="#collection"><i class="fa-solid fa-shop"></i> Explore Collection</a>
+          <a class="btn" href="tel:+918378087999"><i class="fa-solid fa-phone"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+  </header>  <!-- Collection -->  <section id="collection">
+    <div class="sec-head">
+      <div class="sec-title">New Arrivals</div>
+      <div class="sec-note">Replace sample images inside <code>/photos</code> folder</div>
+    </div>
+    <div class="grid">
+      <!-- Sample product cards. Duplicate/change as needed -->
+      <article class="card">
+        <img src="photos/saree1.jpg" alt="Saree 1"/>
+        <div class="info"><div><strong>Bridal Kanjivaram</strong><br><small class="muted">Code: RS-101</small></div><div class="price">₹ 4,999</div></div>
+      </article>
+      <article class="card">
+        <img src="photos/saree2.jpg" alt="Saree 2"/>
+        <div class="info"><div><strong>Silk Zari Work</strong><br><small class="muted">Code: RS-102</small></div><div class="price">₹ 3,499</div></div>
+      </article>
+      <article class="card">
+        <img src="photos/saree3.jpg" alt="Saree 3"/>
+        <div class="info"><div><strong>Classic Paithani</strong><br><small class="muted">Code: RS-103</small></div><div class="price">₹ 6,299</div></div>
+      </article>
+      <article class="card">
+        <img src="photos/saree4.jpg" alt="Saree 4"/>
+        <div class="info"><div><strong>Designer Banarasi</strong><br><small class="muted">Code: RS-104</small></div><div class="price">₹ 5,499</div></div>
+      </article>
+      <article class="card">
+        <img src="photos/saree2.jpg" alt="Saree 5"/>
+        <div class="info"><div><strong>Festive Kora Silk</strong><br><small class="muted">Code: RS-105</small></div><div class="price">₹ 3,899</div></div>
+      </article>
+      <article class="card">
+        <img src="photos/saree1.jpg" alt="Saree 6"/>
+        <div class="info"><div><strong>Bridal Tissue</strong><br><small class="muted">Code: RS-106</small></div><div class="price">₹ 7,199</div></div>
+      </article>
+    </div>
+  </section>  <!-- Contact -->  <section id="contact">
+    <div class="sec-head">
+      <div class="sec-title">Contact & Store Info</div>
+      <div class="sec-note">Open: 10 AM – 9 PM • Sunday Open</div>
+    </div>
+    <div class="contact">
+      <div class="panel">
+        <h3 style="margin:0 0 8px">रोहिणी साडी व सूटिंग शर्टिंग सेंटर</h3>
+        <div class="list">
+          <div class="row"><i class="fa-solid fa-location-dot"></i> नंदागावकर कॉम्प्लेक्स, लोहिया मैदान, देगलूर</div>
+          <div class="row"><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/918378087999" target="_blank" rel="noopener">WhatsApp: 8378087999</a></div>
+          <div class="row"><i class="fa-solid fa-phone"></i> <a href="tel:+918378087999">Call: 8378087999</a></div>
+          <div class="row"><i class="fa-solid fa-tags"></i> Bridal • Paithani • Banarasi • Silk • Daily Wear</div>
+        </div>
+        <a class="cta" style="display:inline-block;margin-top:6px" href="https://wa.me/918378087999" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order / Enquiry on WhatsApp</a>
+      </div>
+      <div class="panel">
+        <iframe class="map" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=नंदागावकर+कॉम्प्लेक्स,+लोहिया+मैदान,+देगलूर&output=embed"></iframe>
+      </div>
+    </div>
+  </section>  <footer>
+    <div class="foot">
+      <div class="brandline">
+        <div class="logo">र</div>
+        <div>
+          <div style="font-weight:800">Rohini Saree & Suiting</div>
+          <small style="color:var(--muted)">© <span id="yr"></span> All rights reserved</small>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <a class="btn" href="#home"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+      </div>
+    </div>
+  </footer>  <script>
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Simple slider logic
+    const slides = document.querySelectorAll('.slide');
+    let idx = 0;
+    setInterval(()=>{
+      slides[idx].classList.remove('active');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('active');
+    }, 4000);
+  </script></body>
+</html>
